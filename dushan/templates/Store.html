@@ -1,0 +1,1930 @@
+{% load static%} <!--load static folder to apply styles images and other stuff to the html-->
+{% static "images" as baseUrl %}
+<! doctype Html>
+<Html>
+    <Head>
+        <Title>Store</Title>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="{% static 'X-UA-Compatible" content="IE=edge' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'style3.css' %}">
+        <link rel="stylesheet" href="{% static 'grid.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--------owl carsoul----->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-------Box icons------->
+        <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"rel='stylesheet'>
+    </Head>
+    <body>
+        <section class="Header1">  
+            <nav>
+                <div class="logo">
+                    <img src="{% static 'images/1589782686146b.png' %}" width ="150"  height="120">
+                </div>
+                <div class="search-box">
+                    <input class="search-txt" type="text" name ="" placeholder = "What are you lookin for?">
+                    <a class="search-btn"href="#">
+                        <i class="fa fa-search"></i>
+
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">STORE</a></li>
+                    <li><a href="{% static 'Blog.html' %}">BLOG</a></li>
+                    <li><a href="{% static 'contact.html' %}">CONTACT US</a></li>
+                </ul>
+
+            </nav>
+
+
+        </section>
+
+        <!------HEro Section----->
+
+        <div class="hero-section">
+            <div class="hero-slide">
+                <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+                    <!-------Side Item---->
+                    <div class="hero-slide-item">
+                        <img src="{% static 'images/wp2732803-counter-strike-go-hd-wallpapers.jpg' %}">
+                        <div class="overlay"></div>
+                        <div class="hero-slide-item-content">
+                            <div class="item-content-wrapper">
+                                <div class="item-content-title top-down">
+                                    <h4>Couter Strike GO For free</h4>
+
+                                </div>
+                                <div class="games-infos top down delay-2">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.5</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bxs-time">
+                                            <span>Free to play</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>HD</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>12+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                   <P> Ace of games is the leading gaming store and blogging site in the internet.
+                                    From here You can buy the latest AAA Title games for fair price.<br><br> You can also buy any
+                                    gaming items such as laptops, PC's ,Keybords, Chairs, Headsets, Camera's, Etc.. And visit our website  blog
+                                    page to know more about latest games and Gaming Accesories</P>
+                                </div>
+                                <div class="item-action top-down delay-6">
+                                    <a href="" class="btn-btn-hover">
+                                        <i class="bx bxs-right-arrow"></i>
+                                        <span>Download Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------End slide item----->
+                    <!-------Side Item---->
+                    <div class="hero-slide-item">
+                        <img src="{% static 'images/far cer4.jpg' %}">
+                        <div class="overlay"></div>
+                        <div class="hero-slide-item-content">
+                            <div class="item-content-wrapper">
+                                <div class="item-content-title top-down">
+                                    <h4>Far Cry New Dawn For <br>
+                                    For Free!</h4>
+
+                                </div>
+                                <div class="games-infos top-down delay-2">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.5</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bxs-time">
+                                            <span>Free to Play</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>HD</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                   <P> Ace of games is the leading gaming store and blogging site in the internet.
+                                    From here You can buy the latest AAA Title games for fair price.<br><br> You can also buy any
+                                    gaming items such as laptops, PC's ,Keybords, Chairs, Headsets, Camera's, Etc.. And visit our website  blog
+                                    page to know more about latest games and Gaming Accesories</P>
+                                </div>
+                                <div class="item-action top-down delay-6">
+                                    <a href="" class="btn-btn-hover">
+                                        <i class="bx bxs-right-arrow"></i>
+                                        <span>Play now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------End slide item----->
+                     <!-------Side Item---->
+                     <div class="hero-slide-item">
+                        <img src="{% static 'images/hit3.png' %}">
+                        <div class="overlay"></div>
+                        <div class="hero-slide-item-content">
+                            <div class="item-content-wrapper">
+                                <div class="item-content-title top-down">
+                                    <h4>HIT MAN 3 <br>
+                                       for free!</h4>
+
+                                </div>
+                                <div class="games-infos top-down delay-2">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.5</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bxs-time">
+                                            <span>Free to Play</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>HD</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                                <div class="item-content-description top-down delay-4">
+                                   <P> Ace of games is the leading gaming store and blogging site in the internet.
+                                    From here You can buy the latest AAA Title games for fair price.<br><br> You can also buy any
+                                    gaming items such as laptops, PC's ,Keybords, Chairs, Headsets, Camera's, Etc.. And visit our website  blog
+                                    page to know more about latest games and Gaming Accesories</P>
+                                </div>
+                                <div class="item-action top-down delay-6">
+                                    <a href="" class="btn-btn-hover">
+                                        <i class="bx bxs-right-arrow"></i>
+                                        <span>Download Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------End slide item----->
+                </div>
+                <!----end hero slider------->
+
+                <!-------top games section slide-->
+                
+                
+        <div class="section">
+            <h2>Top Games</h2>
+            <div class="container">
+                
+                    <div class="section-header">
+                        <h4>></h4>
+                    </div>
+                <!--<div class="top-games-slide">-->
+                    
+                <div class="owl-carousel"  id="top-games-slide">
+                        
+                        <!---Game items----->
+                        {% for game in games %}
+                        
+                            <div class="game-item">
+                                
+                                {% if user.is_authenticated%}
+                                <a href="forza"><img src="{{game.image.url}}"></a>
+                                {%else%}
+                                <a href="accounts/login"><img src="{% static 'images/6070335.jpg' %}"></a>
+                                {%endif%}
+                                <div class="game-item-content">
+                                    <div class="game-item-title">
+                                        <h5>{{game.name}}</h5>
+
+                                    </div>
+                                    <div class="games-infos">
+                                        <div class="game-info">
+                                            <i class="bx bxs-star">
+                                                <span>{{game.rating}}</span>
+                                            </i>
+                                        </div>
+                                        <div class="game-info">
+                                            <i class="bx bx-dollar">
+                                                <span>${{game.price}}</span>
+                                            </i>
+                                        </div>
+                                        <div class="game-info">
+                                                <span>{{game.category}}</span>
+                                        </div>
+                                        <div class="game-info">
+                                            <span>{{game.category}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                               
+                            </div>
+                        {%endfor%}
+                </div>
+                
+                  
+            </div>                
+        </div>                <!---End game item--->
+                        <!---Game items----->
+                        <!-- <div class="game-item">
+                            <img src="{% static 'images/hit.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>HIT MAN 3</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.8</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>Free</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>Role Play</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/far cry6.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>FAR CRY 6</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.5</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>60</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>Action</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/Microsoft-Flight-Simulator-X-Free-Download.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>Microsoft Flight Simulator</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.5</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>70</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>Simulation</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/lol.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>LEAGUE OF LEGENDS</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.0</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>45</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>Adventure</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/dota.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>DOTA 2</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.8</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>72</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>MOBA</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/haloi.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>HALO INFINITE</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.0</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>65</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>FPP</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/csgo.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>Counter Strike Global Offensive</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.0</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>Free</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>FPP</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/valheim.jpeg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>VALHEIM</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bx-star">
+                                            <span>9.5</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>55</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>MMO</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!---End game item--->
+                         <!---Game items----->
+                         <!-- <div class="game-item">
+                            <img src="{% static 'images/halo-master-chief-collection-video-games-helmet-portrait-display-wallpaper-preview.jpg' %}">
+                            <div class="game-item-content">
+                                <div class="game-item-title">
+                                    <h5>HALO FULL EDITION</h5>
+
+                                </div>
+                                <div class="games-infos">
+                                    <div class="game-info">
+                                        <i class="bx bxs-star">
+                                            <span>9.5</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                        <i class="bx bx-dollar">
+                                            <span>44</span>
+                                        </i>
+                                    </div>
+                                    <div class="game-info">
+                                            <span>FPP</span>
+                                    </div>
+                                    <div class="game-info">
+                                        <span>16+</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        <!-- </div> -->
+                        <!---End game item--->
+                        
+                    <!-- </div> -->
+                    
+                <!--</div>--you removed this dev>
+             
+                <!-----End free games section slide-->
+
+            <!-- </div>
+        </div> -->
+        <!----end hero section---->
+
+        <!---New games section---->
+
+        <div class="section">
+            <h2>New Games</h2>
+            <div class="container">
+                <div class="section-header">
+                    <h4>></h4>
+                </div>
+                <div class="game-slide carousel-nav-center owl-carousel">
+                     <!---Game items----->
+                     <a href="#" class="game-item">
+                        <P><img src="{% static 'images/cod1.jpg' %}"></P>
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Call of Duty Modern Warfare 3</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.0</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>Action</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                     <!---Game items----->
+                     <a href="#"class="game-item">
+                        <img src="{% static 'images/nioh2.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>NIOH 2</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>ADVENTURE</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/hmen.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>HUMENKIND</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/b55ada1046a4b5c278214d43dacdfe65.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Days Gone</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+        <!----Mobile game section--->
+
+        
+        <div class="section">
+            <h2>Mobile Games</h2>
+            <div class="container">
+                <div class="section-header">
+                    <h4>></h4>
+                </div>
+                <div class="game-slide carousel-nav-center owl-carousel">
+                     <!---Game items----->
+                     <a href="#" class="game-item">
+                        <P><img src="{% static 'images/artworks-000658950925-wrr2zl-t500x500.jpg' %}"></P>
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>War Robots</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-dollar">
+                                        <span>Free</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>Multiplay</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                     <!---Game items----->
+                     <a href="#"class="game-item">
+                        <img src="{% static 'images/codmobile.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>COD Mobile</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-dollar">
+                                        <span>Free</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>Multiplayer BR</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/Among-Us-Wallpaper.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Among Us 2</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-dollar">
+                                        <span>Free</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>Multiplay/Puzzle</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/Dead Trigger 2.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Dead Trigger 2</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-dollar">
+                                        <span>Free</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>Roleplay</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/Custom-Canvas-Wall-Decals-Battlegrounds-Poster-Player-Unknown-s-Battlegrounds-Wall-Stickers-Mural-PUBG-Game-Wallpaper.jpg_q50.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>PUBG Mobile</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-dollar">
+                                        <span>Free</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>Multiplayer BR</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                    
+
+
+                </div>
+            </div>
+        </div>
+         <!---- End Mobile game section--->
+
+
+         
+        <!----Best Openworld games sectio--->
+
+        
+        <div class="section">
+            <h2>Best Open World Games</h2>
+            <div class="container">
+                <div class="section-header">
+                    <h4>></h4>
+                </div>
+                <div class="game-slide carousel-nav-center owl-carousel">
+                     <!---Game items----->
+                     <a href="#" class="game-item">
+                        <P><img src="{% static 'images/thumb-198637 gta.jpg' %}"></P>
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>GTA 5</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                     <!---Game items----->
+                     <a href="#"class="game-item">
+                        <img src="{% static 'images/horizon-zero-dawn_poster_goldposter_com_1.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/thumb-198639 red dead.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Read Dead Redemption</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/the-witcher-3-wild-hunt-wallpaper-4.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>The Witcher 3</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/thumb-355053ss.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Assasian Creed Valhalla</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/hitman_3_game_icon_by_msx2p_deczbk9.png' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Hit Man 3</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/wp3727933 ass.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Assasian Creed Odyssey</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/microsoft-flight-simulator-next-gen_ym3d.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Microsoft Flight Simulator</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/Games_Subnav_Minecraft-300x465.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>MINECRAFT</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                       <!---Game items----->
+                       <a href="#"class="game-item">
+                        <img src="{% static 'images/shop_item07.jpg' %}">
+                        <div class="game-item-content">
+                            <div class="game-item-title">
+                                <h5>Horizon zero down</h5>
+
+                            </div>
+                            <div class="games-infos">
+                                <div class="game-info">
+                                    <i class="bx bxs-star">
+                                        <span>9.5</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                    <i class="bx bxs-time">
+                                        <span>120 mins</span>
+                                    </i>
+                                </div>
+                                <div class="game-info">
+                                        <span>HD</span>
+                                </div>
+                                <div class="game-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---End game item--->
+                    
+
+
+                </div>
+            </div>
+        </div>
+         <!---- End Best open world game section--->
+
+
+
+
+
+         <!----Product section----->
+        
+        <div class="container3">
+            {%for item in items%}  <!-- making a loop to iterate through the  objects that are send as a list in views.py -->
+                <div class="card">
+                    <img src="{{item.image.url}}"><!--importing images folder as base url  variable to load images in objects -->
+                    <span class="discount">{{item.discount}}%</span>
+                    <div class="panel">
+                     <a href="#" class="fa fa-heart"></a>
+                     <a href="#" class="fa fa-share"></a>
+                     <a href="#" class="fa fa-search"></a>
+                    </div>
+                    <a href="#"><button>Add to cart</button></a>
+                    <div class="info">
+                     <h3>{{item.description}}</h3>
+                     <div class="stars">
+                         <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                         <i class="fa fa-star-half-o"></i>
+                     </div>
+                     <strong class="price">${{item.price}}</strong> <!--getting the value from views.py using jinja format-->
+                    </div>
+                </div>
+            {%endfor%}
+        </div> 
+          
+            <!-- <div class="card">
+                <img src="{% static 'images/shop_item03.jpg' %}">
+                <span class="discount">-{{item.discount}}%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>{{item.description}}</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">${{item.price}}</strong>
+                </div>
+            </div> 
+          -->
+       
+
+            <!-- <div class="card">
+                <img src="{% static 'images/shop_item06.jpg' %}">
+                <span class="discount">-{{item.discount}}%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>{{item.description}}</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">${{item.price}}</strong>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="{% static 'images/product_img01.jpg' %}">
+                <span class="discount">-35%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>E sports gaming jersey</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">${{item.price}}</strong>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="{% static 'images/product_img04.jpg' %}">
+                <span class="discount">-35%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>Red X VR Box</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$25</strong>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="{% static 'images/s_product_img03.jpg' %}">
+                <span class="discount">-15%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>MSI 6Gb VGA</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$125</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/61CGHv6kmWL._AC_SL1000_.jpg' %}">
+                <span class="discount">-11%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>BENGOO Gaming Headset</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$9.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/shop_item09.jpg' %}">
+                <span class="discount">-15%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>MSI GAMING CASE</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$12</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/CASARM0008-1-1.png' %}">
+                <span class="discount">-12%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>ATX Casing</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$11.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/ASUS-ROG-STRIX-HELIOS-GX601-1 (1).png' %}">
+                <span class="discount">-20%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>ASUS ROG STRIX Casing</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$35.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/GAMEMAX-AUTOBOT.webp' %}">
+                <span class="discount">-20%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>AUTOBOT X Casing</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$50.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/MOUMAR0003-1.png' %}">
+                <span class="discount">-12%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>Scorpion Mouse A71</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$12.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/shop_item07.jpg' %}">
+                <span class="discount">-8%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>Gaming Pad A61</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$19.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/shop_item08.jpg' %}">
+                <span class="discount">-5%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>SWITCK Gaming Pads</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$13.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/MOUSO10001-1.png' %}">
+                <span class="discount">-12%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>AScorpion Mouse D21</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$11.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/ARMAGGEDDON-HAVOC-2-2.png' %}">
+                <span class="discount">-20%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>ARMAGGEDDON XX21 Gaming Mouse</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$25.99</strong>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/GAMEMAX-GCR-07-BLUE.webp' %}">
+                <span class="discount">-20%</span>
+                <div class="panel">
+                    <a href="#" class="fa fa-heart"></a>
+                    <a href="#" class="fa fa-share"></a>
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+                <a href="#"><button>Add to cart</button></a>
+                <div class="info">
+                    <h3>GAMEMAX GCR 7 Gaming Chair</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <strong class="price">$25.99</strong>
+                </div>
+                </div>
+                </div>  -->
+          
+
+
+          <!---- End Product section----->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <!----------footer-------->
+
+
+<section class="body">
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About us</h2>
+                <p>Ace of games is the leading gaming store and blogging site in the internet.<br>
+                    From here You can buy the latest AAA Title games for fair price.<br><br> You can also buy any
+                    gaming items such as laptops, PC's ,Keybords, Chairs,<br> Headsets, Camera's, Etc.. And visit our website  blog
+                    page to know more <br>about latest games and Gaming Accesories</p>
+                <ul class="sci">
+                   <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>343 Nailiya, Boyagane<br>
+                        Kurunegala, SR94564,<br>SRI LANKA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:94767028008">+94 76 7028 008</a><br>
+                            <a href="tel:94372056021">+94 37 2056 021</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:dushanforrest343@gmail.com">dushanforrest343@gmail.com</a></p>
+                     
+                    </li
+
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright 2021 Ace of games. All Rights Reserved.</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+       * <!-----Script-->
+        <!-----J query-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+        <!---Owl carosoul----->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <!------App script----->
+        <script src="{% static 'app.js'%}"></script>
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+    </body>
+</Html>

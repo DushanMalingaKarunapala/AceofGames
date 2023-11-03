@@ -1,0 +1,20 @@
+{% extends 'main.html'%}
+
+{%block content%}
+
+<h1>hello {{name}}</h1> <!---call name variable to show what in that variable-->
+
+<form action="add", method="POST">
+    {% csrf_token %}
+    Enter 1st number : <input type="text" name = "num1"><br>
+    Enter 2nd numbeer: <input type = "text" name ="num2"><br>
+    <input type="submit">
+</form>
+<form action="devide", method="POST">
+    {% csrf_token %}
+    Enter 1st number bro: <input type="text" name = "no1"><br>
+    Enter 2nd number bro: <input type = "text" name ="no2"><br>
+    <input type="submit">
+</form>
+
+{%endblock%}

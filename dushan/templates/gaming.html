@@ -1,0 +1,302 @@
+{% load static%} <!--load static folder to apply styles images and other stuff to the html-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name = "viewport" content="width=device-width, initial-
+        scale =1.0">
+        <title>Ace of games</title>
+        <link rel="stylesheet" href="{% static 'style3.css' %}">
+        <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+        
+        <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css' %}">
+        <link rel ="stylesheet" type="text/css" rel="stylesheet" href="{% static 'css/lightslider.css' %}" />  
+
+        <!----j querry script-->
+        <script src="{% static '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' %}"></script>
+       
+
+
+    </head>
+
+
+
+
+    <body>
+        
+        
+        <section class="Header">  
+            <nav>
+                <div class="logo">
+                    <img src="{% static 'images/1589782686146b.png'%}" width ="150"  height="120">
+                </div>
+            
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="Store">STORE</a></li>
+
+                    {%if user.is_authenticated %}  <!--if user is logged in. just show logout button and his name-->
+                    <li>Hello,{{user.first_name}}</li>
+                    <li><a href="accounts/logout">LOGOUT</a></li>
+                    {%else%}    <!--show these to button links if user is not logged in-->
+                    <li><a href="accounts/register">REGISTER</a></li><!-- link to the rigister account / register-->
+                    <li><a href="accounts/login">LOGIN</a></li><!-- link to the login account / login-->
+                    {%endif%}    
+                    <li><a href="{% static 'all files/contact.html'%}">CONTACT US</a></li>
+                </ul>
+
+            </nav>
+            <div class="text-box">
+                <h3>Welcome to Ace of Games</h3>
+                <p>Ace of games is the leading gaming store and blogging site in the internet.
+                    From here You can buy the latest AAA Title games for fair price.<br><br> You can also buy any
+                    gaming items such as laptops, PC's ,Keybords, Chairs, Headsets, Camera's, Etc.. And visit our website  blog
+                    page to know more about latest games and Gaming Accesories.<br><br>
+
+                    <a href="{% static 'Store.html' %}" class="hero-btn">Purchase Now</a>
+                </p>
+            </div>
+            <div class="image">
+                <img src="{% static 'images/you.png' %}">
+            </div>
+           
+            
+
+        </section>
+
+        <!--------Newly added games section-->
+
+
+        <section class="newlyadded" id="newlyadded">>
+            <h3>Latest Releases</h3>
+            <div class="slider"  id="slider">
+            <figure>
+                <!---slider---->
+                <ul id="autoWidth" class="cs-hidden"></ul>
+                    <!------1----->    
+                    <li class="item-a1">
+                        <!----slider box----->
+                    <div class="wrapper">
+                        <p class="Forza-Horizon5">HALO INFINITE </p>
+                        <img src="{% static 'images/halo_infinite___icon_by_blagoicons_de223fb.png' %}" class="model">
+    
+                        <!------details-->
+                        <div class="details">
+                        <!----logo-->
+                       
+                        <!------game details-->
+                    
+                    </div>
+                    </div>
+                </li>
+                <!------2----->    
+                <li class="item-a2">
+                    <!----slider box----->
+                <div class="wrapper">
+                    <p class="Forza-Horizon5">DYING LIGHT 2</p>
+                    <img src="{% static 'images/dying_light_2___icon_by_blagoicons_ddfet49.png' %}" class="model">
+
+                    <!------details-->
+                    <div class="details">
+                    <!----logo-->
+                   
+                    <!------game details-->
+                   
+                </div>
+                </div>
+            </li>
+            <!------3----->    
+            <li class="item-a3">
+                <!----slider box----->
+            <div class="wrapper">
+                <p class="Forza-Horizon5">HIT MAN 3</p>
+                <img src="{% static 'images/hitman_3_game_icon_by_msx2p_deczbk9.png' %}" class="model">
+
+                <!------details-->
+                <div class="details">
+                <!----logo-->
+              
+                <!------game details-->
+              
+            </div>
+            </div>
+        </li>
+        <!------4----->    
+        <li class="item-a4">
+            <!----slider box----->
+        <div class="wrapper">
+            <p class="Forza-Horizon5">BACK FOR BLOOD 2021</p>
+            <img src="{% static 'images/1622619322_back-4-blood-torrent.png' %}" class="model">
+
+            <!------details-->
+            <div class="details">
+            <!----logo-->
+          
+            <!------game details-->
+            
+        </div>
+        </div>
+    </li>
+    <!------5----->    
+    <li class="item-a5">
+        <!----slider box----->
+    <div class="wrapper">
+        <p class="Forza-Horizon5">FAR CRY 6</p>
+        <img src="{% static 'images/deiij9l-26fd6f15-f04a-44f0-8e62-04382634d6c0.png' %}" class="model">
+
+        <!------details-->
+        <div class="details">
+        <!----logo-->
+        
+        <!------game details-->
+       
+    </div>
+    </div>
+</li>
+<!------6----->    
+<li class="item-a6">
+    <!----slider box----->
+<div class="wrapper">
+    <p class="Forza-Horizon5">RESIDENT EVIL VILLAGE</p>
+    <img src="{% static 'images/resident_evil_8___village_icon_by_kiramaru_kun_dek3d5h.png' %}" class="model">
+
+    <!------details-->
+    <div class="details">
+    <!----logo-->
+ 
+    <!------game details-->
+   
+</div>
+</div>
+</li>
+<!------7----->    
+<li class="item-a7">
+    <!----slider box----->
+<div class="wrapper">
+    <p class="Forza-Horizon5">FORZA HORIZON 5</p>
+    <img src="{% static 'images/zp29a2v1nv571.png' %}" class="model">
+
+    <!------details-->
+    <div class="details">
+    <!----logo-->
+  
+    <!------game details-->
+   
+</div>
+</div>
+</li>
+<!------8----->    
+<li class="item-a8">
+    <!----slider box----->
+<div class="wrapper">
+    <p class="Forza-Horizon5">HORIZON FORBIDDEN WEST 2021</p>
+    <img src="{% static 'images/horizon_forbidden_west_icon_ver__1_by_onfire666_dedetco.png' %}" class="model">
+
+    <!------details-->
+    <div class="details">
+    <!----logo-->
+    
+    <!------game details-->
+    
+</div>
+</div>
+</li>
+ <!------1----->    
+ <li class="item-1">
+    <!----slider box----->
+<div class="wrapper">
+    <p class="Forza-Horizon5">HALO INFINITE</p>
+    <img src="{% static 'images/halo_infinite___icon_by_blagoicons_de223fb.png' %}" class="model">
+
+    <!------details-->
+    <div class="details">
+    <!----logo-->
+   
+    <!------game details-->
+
+</div>
+</div>
+</li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+</ul>
+
+ 
+</figure>
+</div>
+</section>
+<!----------footer-------->
+
+
+<section class="body">
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About us</h2>
+                <p>Ace of games is the leading gaming store and blogging site in the internet.<br>
+                    From here You can buy the latest AAA Title games for fair price.<br><br> You can also buy any
+                    gaming items such as laptops, PC's ,Keybords, Chairs,<br> Headsets, Camera's, Etc.. And visit our website  blog
+                    page to know more <br>about latest games and Gaming Accesories</p>
+                <ul class="sci">
+                   <li><a href="#"><i class="{% static 'fa fa-facebook' %}" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>343 Nailiya, Boyagane<br>
+                        Kurunegala, SR94564,<br>SRI LANKA</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:94767028008">+94 76 7028 008</a><br>
+                            <a href="tel:94372056021">+94 37 2056 021</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:dushanforrest343@gmail.com">dushanforrest343@gmail.com</a></p>
+                     
+                    </li
+
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright 2021 Ace of games. All Rights Reserved.</p>
+    </div>
+
+</section>
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
